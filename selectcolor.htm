@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+<style>
+#bt-p{
+   background-color:#D1CDDA;
+}
+#bt-y{
+   background-color:#FFE681;
+}
+#bt-g{
+   background-color:#AEE1CD;
+}
+#bt-b{
+   background-color:#1F2020;
+}
+#bt-w{
+   background-color:#F9F6EF;
+}
+#bt-r{
+   background-color:#BA0C2E;
+}
+.bts-color{
+   width:50;
+   height:30;
+   border: 2px solid #000000;
+   border-radius: 10px;
+}
+</style>
+
+<script>
+function showColor(cid){
+   if (cid==1) {
+      document.getElementById("iphone-photo").setAttribute("src","purple.jpg");
+      document.getElementById("iphone-color").innerHTML="紫色";
+   }
+   else if (cid==2) {
+      document.getElementById("iphone-photo").setAttribute("src","yellow.jpg");
+      document.getElementById("iphone-color").innerHTML="黃色";
+   }
+   else if (cid==3) {
+      document.getElementById("iphone-photo").setAttribute("src","green.jpg");
+      document.getElementById("iphone-color").innerHTML="綠色";
+   }
+   else if (cid==4) {
+      document.getElementById("iphone-photo").setAttribute("src","black.jpg");
+      document.getElementById("iphone-color").innerHTML="黑色";
+   }
+   else if (cid==5) {
+      document.getElementById("iphone-photo").setAttribute("src","white.jpg");
+      document.getElementById("iphone-color").innerHTML="白色";
+   }
+   else {
+      document.getElementById("iphone-photo").setAttribute("src","red.jpg");
+      document.getElementById("iphone-color").innerHTML="紅色";
+   } 
+}
+</script>
+
+</head>
+
+<body>
+
+<h1 style="color:#ff0000;">選你喜歡的顏色</h1><br>
+
+<div id="iphone-color">紫色</div><br>
+
+<img id="iphone-photo" src="purple.jpg"><br>
+
+<input type="button" id="bt-p" class="bts-color" onclick="javascript:{showColor(1);}"></input>
+<input type="button" id="bt-y" class="bts-color" onclick="javascript:{showColor(2);}"></input>
+<input type="button" id="bt-g" class="bts-color" onclick="javascript:{showColor(3);}"></input>
+<input type="button" id="bt-b" class="bts-color" onclick="javascript:{showColor(4);}"></input>
+<input type="button" id="bt-w" class="bts-color" onclick="javascript:{showColor(5);}"></input>
+<input type="button" id="bt-r" class="bts-color" onclick="javascript:{showColor(6);}"></input>
+
+</body>
+
+</html>
